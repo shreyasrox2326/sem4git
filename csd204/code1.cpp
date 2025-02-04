@@ -6,7 +6,7 @@
 
 using namespace std;
 
-string user_id (int input)
+string symbolic_user_id (int input)
 {
     struct passwd* pw = getpwuid(input);
     if (pw != nullptr) 
@@ -31,20 +31,18 @@ string my_func(string input)
     {
         i++;
     }
-    return input.substr(i);
+    string line2 = input.substr(i);
+    // line2 = line2.substr(0, line2.find_first_of(' '));
+    return line2;
 }
 
 
 int extract_uid (string line)
 {
-    line = my_func(line);
-    int i = 0;
-    while (line.at(i) != ' '){
-        i++;
-    }
-    string line2 = line.substr(0,i);
-    cout << line2;
-    return stoi(line2);
+    
+    string line2 = line.substr(line.find_first_of("0123456789"));
+    line2 = line2.substr(0, line2.find_first_not_of("1234567890"));
+    return (stoi(line2));
 }
 
 int main ()
@@ -55,7 +53,7 @@ int main ()
     if (chdir("./proc") == 0)
     cout << "Entered proc\n";
 
-    cout << "PID:            NAME:           STATUS:" << endl;
+    cout << "PID:            NAME:           STATUS:        SYMBOLIC USERID:" << endl;
     for(int i=1; i<=32768; i++)
     {
         string dir = "./" + to_string(i);
@@ -69,9 +67,12 @@ int main ()
             {
                 getline(fin,line);
                 if (ln == 0 or ln == 2)
-                cout << left << setw(10) << my_func(line);
-                if (ln == 8)
-                cout << left << setw(10) << extract_uid(line);
+                cout << left << setw(16) << my_func(line);
+                if (ln == 8){
+                    cout << left << setw(1) << symbolic_user_id(extract_uid(my_func(line)));
+                    // cout << left << setw(10) << extract_uid(line);
+                }
+                
             }
             chdir("/proc");
             cout << "\n";
