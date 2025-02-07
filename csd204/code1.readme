@@ -1,0 +1,21 @@
+# proc_info
+
+This C++ program retrieves and displays information about processes running on a Linux system by reading data from the `/proc` filesystem.
+
+## Description
+
+The program iterates through process IDs (PIDs) from 1 to 32768, attempting to access the corresponding directory under `/proc`. For each PID, it reads the `/proc/[PID]/status` file and extracts specific information:
+
+* **PID:** The process ID.
+* **Name:** The name of the process.
+* **Status:** The status of the process (e.g., sleeping, running).
+* **Symbolic User ID:** The username associated with the process's user ID.
+
+The extracted information is then printed in a formatted table.
+
+## Compilation
+
+To compile the program, use a C++ compiler such as g++:
+
+```bash
+g++ proc_info.cpp -o proc_info

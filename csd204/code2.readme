@@ -1,0 +1,18 @@
+# system_info
+
+This C++ program retrieves and displays key system information on Linux by reading data from the `/etc` and `/proc` filesystems.
+
+## Description
+
+The program extracts and prints the following information:
+
+* **OS Version:**  The operating system version, read from `/etc/os-release`.
+* **CPU Information:** CPU model name, total number of threads, and total number of physical cores, obtained from `/proc/cpuinfo`.
+* **RAM Information:** Total system RAM, read from `/proc/meminfo`.
+
+## Compilation
+
+To compile the program, use a C++ compiler such as g++:
+
+```bash
+g++ system_info.cpp -o system_info
