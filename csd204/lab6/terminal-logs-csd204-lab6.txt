@@ -1,0 +1,180 @@
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ g++ code1.cpp -pthread
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 10   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait          28.64          32.52           0.40
+Worst Case            198            141              4
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 10   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait          30.20          30.00           0.43
+Worst Case            177            182              4
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 10   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait          33.79          33.98           0.44
+Worst Case            177            192              4
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 10   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait          38.06          41.39           0.66
+Worst Case            215            195              7
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 10   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait          25.01          27.44           0.46
+Worst Case            123            158              4
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ g++ code1.cpp -pthread
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 20   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         226.91         214.20           0.81
+Worst Case           1061           1132             13
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 20   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         276.27         225.45           1.02
+Worst Case           1270           1814             16
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 20   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         216.24         216.79           0.77
+Worst Case           1374           1575              9
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 20   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         203.25         225.47           1.23
+Worst Case           1257           1563             17
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 20   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         228.13         214.01           0.77
+Worst Case           2055           1277              8
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ g++ code1.cpp -pthread
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 30   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         373.87         401.81           2.50
+Worst Case           2139           3197             30
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 30   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         371.17         393.96           1.52
+Worst Case           2976           2266             17
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 30   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         378.68         393.50           1.58
+Worst Case           2381           2293             12
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 30   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         406.69         391.92           1.79
+Worst Case           2591           2424             23
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 30   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         393.22         404.49           1.63
+Worst Case           1959           4044             16
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ g++ code1.cpp -pthread
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 40   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         625.03         668.32           3.91
+Worst Case           4518           4549             22
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 40   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         610.10         647.15           3.96
+Worst Case           3463           3984             26
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 40   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         628.14         646.32           3.36
+Worst Case           5576           3901             19
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 40   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         649.12         664.23           3.23
+Worst Case           3568           3657             19
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 40   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         670.46         637.26           3.85
+Worst Case           4324           4526             26
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ g++ code1.cpp -pthread
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 50   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         925.84         900.88           6.01
+Worst Case           5948           6769             26
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 50   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         947.06         940.76           7.22
+Worst Case           6862           7319             33
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 50   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         914.00         956.40           6.91
+Worst Case           4654           8286             29
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 50   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         924.30         923.85           6.72
+Worst Case           7098           6588             34
+vscode ➜ .../code/sem4git/csd204/lab6 (main) $ ./a.out
+Input Parameters:
+n = 50   k = 10   lambda1 = 5   lambda2 = 10
+
+       ---            TAS            CAS          B.CAS
+ Avg. Wait         946.00         891.66           8.63
+Worst Case           7213           6003             54
